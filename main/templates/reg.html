@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Reg{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'test.css' %}" />
+{% endblock %}
+
+{% block body %}
+<form action="{% url 'main:user:reg' %}" method="POST">
+  <input name="username" />
+  <input name="password" />
+  <input type="submit" />
+</form>
+{% endblock %}

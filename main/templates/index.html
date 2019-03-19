@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}User{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'test.css' %}" />
+{% endblock %}
+
+{% block body %}
+{{ user.username }} - {{ user.password }}
+{% endblock %}

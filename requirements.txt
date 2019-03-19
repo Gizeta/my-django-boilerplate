@@ -1,0 +1,4 @@
+Django==2.1.7
+gevent==1.4.0
+gunicorn==19.9.0
+pymysql==0.9.3
